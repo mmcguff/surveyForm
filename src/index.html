@@ -9,45 +9,32 @@
 </head>
 
 <body>
-  <p>Content Goes here</p>
-
-  <h1 id="title">Survey Form</h1>
-  <p id="description">Description</p>
-  <form id="survey-form">
-    <label id="name-label" for="name">Name Label</label>
-    <input id="name" type="text" name="name" placeholder="placeholder name" required>
-    </br>
-    <label id="email-label" for="email">Email Label</label>
-    <input id="email" type="email" name="email" placeholder="placeholder email" required>
-    </br>
-
-    <label id="number-label" for="number">Number Label</label>
-    <input id="number" type="number" name="number" placeholder="placeholder number" min="1" max="5" required>
-    </br>
-
-    <select id="dropdown">
-      <option value="drop1">drop 1</option>
-      <option value="drop2">drop 2</option>
-      <option value="drop3">drop 3</option>
-    </select>
-    </br>
-
-   <label id="radio-label" for="radio"></label>
-  <input type="radio" name="radio" value="one">One</input></br>
-  <input type="radio" name="radio" value="two">Two</input></br>
-  <input type="radio" name="radio" value="three">Three</input></br>
-
-  <label id="checkbox-label" for="radio"></label>
-  <input type="checkbox" name="checkbox" value="1">1</input></br>
-  <input type="checkbox" name="checkbox" value="2">2</input></br>
-  <input type="checkbox" name="checkbox" value="3">3</input></br>
-
-    <textarea>
-     Here is my text area. 
-    </textarea>
-
-    <button id="submit" type="submit" form="survey-form" value="Submit">Submit</button>
-
+  
+  
+ 
+  <form action="/action_page.php">
+    <div class="container">
+        <h1 id="title">Chirstlike Attributes Survey</h1>
+      <p id="description">This survey will help measure how Christlike you are.</p>
+      <hr>
+  
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+  
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+  
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      <hr>
+      <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+  
+      <button type="submit" class="registerbtn">Register</button>
+    </div>
+    
+    <div class="container signin">
+      <p>Already have an account? <a href="#">Sign in</a>.</p>
+    </div>
   </form>
 
 

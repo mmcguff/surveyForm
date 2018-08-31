@@ -13,7 +13,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Project Template | freecodecamp.org',
+      title: 'Survey Form | freecodecamp.org',
       minify:{
           collapseWhitespace: true
       },
