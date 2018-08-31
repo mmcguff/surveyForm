@@ -9,44 +9,71 @@
 </head>
 
 <body>
-  
-  
- 
-  <form action="/action_page.php">
+
+  <form id="survey-form">
     <div class="container">
-        <h1 id="title">Chirstlike Attributes Survey</h1>
+      <h1 id="title">Chirstlike Attributes Survey</h1>
       <p id="description">This survey will help measure how Christlike you are.</p>
+
       <hr>
-  
-      <label for="email"><b>Email</b></label>
-      <input type="text" placeholder="Enter Email" name="email" required>
-  
-      <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
-  
-      <label for="psw-repeat"><b>Repeat Password</b></label>
-      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+      <label id="name-label" for="name">
+        <b>Please enter your name:</b>
+      </label>
+      <input id="name" type="text" name="name" placeholder="John Smith" required>
+
+      <label id="email-label" for="email">
+        <b>Please enter your email:</b>
+      </label>
+      <input id="email" type="email" name="email" placeholder="test@gmail.com" required>
+
       <hr>
-      <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
-  
-      <button type="submit" class="registerbtn">Register</button>
-    </div>
+
+      <label id="number-label" for="number">
+        <b>Please rate your faith on a Scale of 1 to 10:</b>
+      </label> </br>
+      <input id="number" type="number" name="number" placeholder="5" min="1" max="10" required>
+      
+    </br>
+
+      <label id="dropdown-label" for="dropdown">
+        <b>Please select the person that is most like you:</b>
+      </label>
+     </br>
+      <select id="dropdown">
+          <option value="1">Steve Harvey</option>
+          <option value="2">Winnie the Pooh</option>
+          <option value="3">The Apostle Paul</option>
+      </select>
+      
+      <label id="radio-label" for="radio">
+          <b>Please select what you would most like watch tonight:</b>
+      </label></br>
     
-    <div class="container signin">
-      <p>Already have an account? <a href="#">Sign in</a>.</p>
+        <input type="radio" name="radio" value="two">Horror movie</input></br>
+        <input type="radio" name="radio" value="three">Romantic Comedy</input></br>
+        <input type="radio" name="radio" value="three">Documentary</input></br>
+        
+        <label id="checkbox-label" for="checkbox">
+          <b>Check all that Apply to you:</b>
+        </label></br>
+  <input type="checkbox" name="checkbox" value="1">I am a good person.</input></br>
+  <input type="checkbox" name="checkbox" value="2">I love people around me.  </input></br>
+  <input type="checkbox" name="checkbox" value="3">I love God</input></br>
+ 
+  
+  <label id="textarea-label" for="textarea">
+      <b>Please enter what you are feeling right now:</b>
+    </label></br>
+         <textarea id="textarea" name="textarea" placeholder="Write something..">
+    </textarea>
+      
+    <hr>
+
+      <button id="submit"type="submit" class="registerbtn" onclick="alert('thanks for your submission');">Submit</button>
     </div>
+
   </form>
-
-
-
-  <!--
-User Story #12: Inside the form element, I can select an option from a dropdown that has a corresponding id="dropdown".
-User Story #13: Inside the form element, I can select a field from one or more groups of radio buttons. Each group should be grouped using the name attribute.
-User Story #14: Inside the form element, I can select several fields from a series of checkboxes, each of which must have a value attribute.
-User Story #15: Inside the form element, I am presented with a textarea at the end for additional comments.
-User Story #16: Inside the form element, I am presented with a button with id="submit" to submit all my inputs.
--->
-
 
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
